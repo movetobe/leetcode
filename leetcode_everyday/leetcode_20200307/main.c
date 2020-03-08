@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* 
+ * get the max value in a queue, O(1) complexity
+ * https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/
+ */
+
 /* mono queue, max_front->max_rear keep decrease */
 #define QUEUE_LEN 1024
 struct max_queue {
