@@ -30,7 +30,7 @@ int coin(int* coins, int coinsSize, int amount, int *cache){
         }
     }
     cache[amount] = min_cost;
-    return min_cost;
+    return (min_cost < INT_MAX ? min_cost : -1);
 }
 
 int compare(const void *p1, const void *p2)
